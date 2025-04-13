@@ -1,3 +1,4 @@
+
 //Nested Loops
 let students = ["Alice", "Bob", "Charlie"];
 let subjects = ["Math", "Science"];
@@ -37,20 +38,57 @@ for (let i = numbers.length - 1; i >=0; i--){
 console.log(numbers);
 console.log(reversed);
 
+//shopping Cart
+let shoppingCart = [];
+
+shoppingCart.push("Milk", "Bread", "Eggs");
+console.log(shoppingCart);
+
+lastItem = shoppingCart.pop();
+
+console.log(lastItem);
+console.log(shoppingCart);
+
+//adding and removing elements
+let fruits = ["apple", "orange", "plum"];
+console.log(fruits);
+
+fruits.push("banana");
+console.log(fruits);
+
+let newfruits = fruits.push("peach");
+console.log(newfruits);
+
+fruits.pop();
+console.log(fruits);
+
+let poppedFruit = fruits.pop();
+console.log(poppedFruit);
+
+//understanding the basic of array
+let fruit = ["Apple", "Orange", "Plum"];
+
+console.log(fruit.length); // 3
+
+console.log(fruit[0]); // “Apple”
+console.log(fruit[1]); // “Orange”
+console.log(fruit[2]); // Plum
+
+
+//looping through array
+let FRUITS = ["Apple", "Orange", "Plum", "peach", "Apple", "Orange"];
+let appleCount = 0;
+for (let i = 0; i < FRUITS.length; i++){
+    //console.log(FRUITS[i].toUpperCase());
+    if (FRUITS[i].toLowerCase() === "apple"){
+        appleCount += 1;
+    }
+}
+console.log(appleCount);
 
 
 /*
-
 //part1
-let fruits = ["Apple", "Orange", "Plum"];
-
-console.log(fruits.length); // 3
-
-console.log(fruits[0]); // “Apple”
-console.log(fruits[1]); // “Orange”
-console.log(fruits[2]); // Plum
-
-//part2
 console.log(arr);
 console.log(arr2);
 
@@ -65,7 +103,7 @@ console.log(arr2[arr2.length - 1]); //last element of the array
 let fruits = ["Apple", "Orange", "Plum"];
 console.log(fruits[fruits.length]);
 
-//part3
+//part2
 let groceryList = [];
 
 groceryList[0] = "Apples";
@@ -93,36 +131,7 @@ console.log("grocery length:", groceryList.length);
 let arr = new Array ();
 let arr2 = ["hello world", 200, true];
 
-
-//part4
-
-let fruits = ["apple", "orange", "plum"];
-console.log(fruits);
-
-fruits.push("banana");
-console.log(fruits);
-
-let newfruits = fruits.push("peach");
-console.log(newfruits);
-
-fruits.pop();
-console.log(fruits);
-
-let poppedFruit = fruits.pop();
-console.log(poppedFruit);
-
-let shoppingCart = [];
-
-shoppingCart.push("Milk", "Bread", "Eggs");
-console.log(shoppingCart);
-
-lastItem = shoppingCart.pop();
-
-console.log(lastItem);
-console.log(shoppingCart);
-
-//part5
-
+//part3
 let pets = ["Dog", "Cat", "bird", "fish", 12];
 
 for (let index = 0; index < pets.length; index++) {
